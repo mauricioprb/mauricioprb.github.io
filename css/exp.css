@@ -1,0 +1,133 @@
+.exp {
+    max-width: 1200px;
+    padding: 120px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 140px;
+}
+
+.exp h2 {
+    font-family: Merriweather, 'Times New Roman', serif;
+}
+
+.exp div {
+    font-family: 'Fira Sans', Arial, sans-serif;
+}
+
+.exp .subtitulo {
+    color: #e0e0e0;
+}
+
+.exp-txt {
+    font-size: 1.5rem;
+    line-height: 1.33;
+    max-width: 40ch;
+    margin-bottom: 60px;
+    color: #525252;
+}
+
+.exp-txt strong {
+    color: #141414;
+}
+
+.local {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 108px;
+    padding: 20px;
+    background: #f5f5f5;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    position: relative;
+}
+
+.local::before {
+    content: "";
+    display: block;
+    background: #F94A4A;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position: absolute;
+    top: 28px;
+    left: -30px;
+}
+
+.local-ano {
+    position: absolute;
+    top: 24px;
+    left: -80px;
+    color: #525252;
+    font-size: 0.87rem;
+}
+
+.local-titulo {
+    font-size: 1.125rem;
+    line-height: 1.1;
+    font-weight: bold;
+}
+
+.cargo {
+    text-align: right;
+}
+
+.local-txt {
+    font-size: 0.875rem;
+    line-height: 1.4;
+    color: #525252;
+}
+
+.local-skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    gap: 10px;
+    align-content: start;
+}
+
+.local-skills li {
+    font-size: 0.875rem;
+    line-height: 1.4;
+    background: #fff;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+
+@media (max-width: 800px) {
+    .exp {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .exp .subtitulo {
+        color: #141414;
+    }
+
+    .exp-txt {
+        font-size: 1.25rem;
+    }
+
+    .local-ano {
+        position: initial;
+        order: 1;
+    }
+}
+
+@media (max-width: 600px) {
+    .local {
+        grid-template-columns: 1fr;
+    }
+
+    .cargo {
+        color: #666;
+    }
+
+    .local::before {
+        display: none;
+    }
+
+    .local-ano {
+        margin-top: 20px;
+    }
+}

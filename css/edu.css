@@ -1,0 +1,168 @@
+.edu {
+    background: #141414;
+}
+
+.edu-container {
+    max-width: 1200px;
+    padding: 120px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 140px;
+}
+
+.edu h2 {
+    font-family: Merriweather, 'Times New Roman', serif;
+}
+
+.edu div {
+    font-family: 'Fira Sans', Arial, sans-serif;
+    color: #fff;
+}
+
+.edu .subtitulo {
+    color: #000;
+}
+
+.edu-txt {
+    font-size: 1.5rem;
+    line-height: 1.33;
+    max-width: 40ch;
+    margin-bottom: 60px;
+    color: #A3A3A3;
+}
+
+.edu-txt strong {
+    color: #fff;
+}
+
+.facul {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 10px 108px;
+    padding: 20px;
+    background: #000;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    position: relative;
+}
+
+.facul::before {
+    content: "";
+    display: block;
+    background: #F94A4A;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position: absolute;
+    top: 28px;
+    left: -30px;
+}
+
+.facul-ano {
+    position: absolute;
+    top: 24px;
+    left: -110px;
+    color: #525252;
+    font-size: 0.87rem;
+}
+
+.facul-tipo {
+    font-size: 0.875rem;
+    color: #8F8F8F;
+    text-transform: uppercase;
+}
+
+.facul-titulo {
+    font-size: 1.125rem;
+    line-height: 1.1;
+    font-weight: bold;
+}
+
+.facul-txt {
+    grid-column: 1 / -1;
+    font-size: 0.875rem;
+    line-height: 1.4;
+    color: #A3A3A3;
+}
+
+.cursos {
+    margin-bottom: 60px;
+}
+
+.edu-extra h3 {
+    font-size: 0.875rem;
+    line-height: 1.4;
+    color: #8f8f8f;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.edu-extra h3::before {
+    display: block;
+    content: "";
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: -30px;
+}
+
+
+.cursos h3::before {
+    background: url("../fonts/icons/cursos.svg") no-repeat center center;
+}
+
+.idiomas h3::before {
+    background: url("../fonts/icons/idiomas.svg") no-repeat center center;
+}
+
+.edu-extra {
+    font-size: 1.125rem;
+    line-height: 1.1;
+}
+
+.edu-extra span {
+    color: #8f8f8f;
+}
+
+.cursos li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.idiomas li {
+    margin-bottom: 26px;
+}
+
+@media (max-width: 800px) {
+    .edu-container {
+        grid-template-columns: 1fr;
+        padding: 60px 20px;
+        gap: 40px;
+        
+    }
+
+    .edu .subtitulo {
+        color: #fff;
+    }
+
+    .edu-txt {
+        font-size: 1.25rem;
+    }
+
+    .facul-ano {
+        position: initial;
+        order: 1;
+    }
+
+    .facul::before {
+        display: none;
+    }
+
+    .edu-extra h3::before {
+        position: initial;
+        margin-bottom: 10px;
+    }
+}
