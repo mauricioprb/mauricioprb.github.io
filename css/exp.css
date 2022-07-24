@@ -115,12 +115,21 @@
 }
 
 @media (max-width: 600px) {
+    .exp {
+        padding: 60px 10px;
+    }
+
     .local {
         grid-template-columns: 1fr;
     }
 
+    .local-skills {
+        justify-content: start;
+    }
+
     .cargo {
         color: #666;
+        text-align: left;
     }
 
     .local::before {
@@ -130,4 +139,6 @@
     .local-ano {
         margin-top: 20px;
     }
+
+    
 }
