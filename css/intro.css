@@ -16,7 +16,7 @@
 }
 
 .intro h1 span {
-    color: #F94A4A;
+    color: #f94a4a;
 }
 
 .intro a {
@@ -30,7 +30,7 @@
 
 .intro a::after {
     content: "";
-    background: #F94A4A;
+    background: #f94a4a;
     display: block;
     width: 342px;
     height: 2px;
@@ -59,7 +59,7 @@
     .intro a {
         font-size: 0.8rem;
         color: #fff;
-        background: #F94A4A;
+        background: #f94a4a;
         padding: 10px 20px;
         border-radius: 4px;
         white-space: nowrap;

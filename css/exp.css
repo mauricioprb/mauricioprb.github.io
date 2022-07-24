@@ -45,7 +45,7 @@
 .local::before {
     content: "";
     display: block;
-    background: #F94A4A;
+    background: #f94a4a;
     width: 8px;
     height: 8px;
     border-radius: 50%;
